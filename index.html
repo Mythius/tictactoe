@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mega TicTacToe</title>
+	<style>
+		canvas{
+			display: block;
+			position: absolute;
+			width: 600px;
+			height: 600px;
+			background-color:  black;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	</style>
+	<script src=helpers.js></script>
+	<script src=input.js></script>
+	<script src=grid.js></script>
+</head>
+<body>
+	<canvas width=600 height=600></canvas>
+	<script src=TicTacToe.js></script>
+	<script>
+		TicTacToe.start(obj('canvas'));
+	</script>
+</body>
+</html>
