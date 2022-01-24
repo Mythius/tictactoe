@@ -15,6 +15,12 @@
 			left: 50%;
 			transform: translateX(-50%) translateY(-50%);
 		}
+		body{
+			text-align:center;
+		}
+		button{
+			transform: translateY(-23px);
+		}
 	</style>
 	<script src=helpers.js></script>
 	<script src=input.js></script>
@@ -23,6 +29,8 @@
 <body>
 	<canvas width=600 height=600></canvas>
 	<script src=TicTacToe.js></script>
+	<br>
+	<button onclick="canvas.requestFullscreen()">Fullscreen</button>
 	<script>
 		TicTacToe.start(obj('canvas'));
 	</script>
